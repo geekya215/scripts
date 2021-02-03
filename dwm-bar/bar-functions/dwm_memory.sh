@@ -5,7 +5,7 @@ dwm_memory () {
 	MEMAVA=$(free | grep Mem | awk '{printf("%5.2f" , $7 / 1024 / 1024)}')
 
 	printf "%s" "$SEP1"
-	printf "%sG/%sG" "$MEMUSED" "$MEMAVA"
+	printf "%sG/%sG" "$MEMUSED" "$MEMAVA"
 	printf "%s\n" "$SEP2"
 }
 
